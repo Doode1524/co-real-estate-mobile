@@ -1,5 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
+import { useFonts, Jost_400Regular } from "@expo-google-fonts/jost";
 import {
   StyleSheet,
   Text,
@@ -11,6 +12,10 @@ import {
 } from "react-native";
 
 export default function Home() {
+  let [fontsLoaded] = useFonts({
+    Jost_400Regular,
+  });
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -69,10 +74,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#133362",
     color: "#ffffff",
     borderColor: "transparent",
-    fontFamily: "Jost",
+    fontFamily: "Jost_400Regular",
     fontSize: "20px",
     lineHeight: "20px",
-    fontWeight: 500,
+    fontWeight: 400,
     letterSpacing: "0px",
     paddingTop: "15px",
     paddingRight: "35px",

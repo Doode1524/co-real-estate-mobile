@@ -1,5 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import Home from "./components/Home";
+import FindAgent from "./components/FindAgent";
 import React from "react";
 import {
   StyleSheet,
@@ -15,7 +16,7 @@ export default function App() {
   return (
     <View>
       <Home />
-
+      <FindAgent />
       <StatusBar style="auto" />
     </View>
   );
