@@ -25,6 +25,12 @@ export default function FindAgent() {
         well as Mortgage Professionals. We are one click or phone call away,
         here to serve you and all of Colorado.{" "}
       </Text>
+      <Pressable
+        style={styles.agentBtn}
+        onPress={() => Alert.alert("Simple Button pressed")}
+      >
+        Find an Agent
+      </Pressable>
     </View>
   );
 }
@@ -48,11 +54,12 @@ const styles = StyleSheet.create({
     marginTop: "20px",
     marginLeft: "20px",
     marginBottom: "20px",
+    marginRight: '20px'
   },
   p: {
     fontFamily: "Jost, Arial, Tahoma, sans-serif",
     fontSize: "15px",
-    fontWeight: 'bold',
+    fontWeight: "bold",
     lineHeight: "24px",
     letterSpacing: 0,
     display: "flex",
@@ -61,6 +68,30 @@ const styles = StyleSheet.create({
     marginBottom: "20px",
     marginRight: "20px",
   },
+  agentBtn: {
+    backgroundColor: "#133362",
+    color: "#ffffff",
+    borderColor: "transparent",
+    fontFamily: "Jost_400Regular",
+    fontSize: "20px",
+    lineHeight: "20px",
+    fontWeight: 400,
+    letterSpacing: "0px",
+    paddingTop: "15px",
+    paddingRight: "35px",
+    paddingBottom: "15px",
+    paddingLeft: "35px",
+    borderWidth: 0,
+    borderRadius: "35px",
+    borderStyle: "solid",
+    width: "54vw",
+    textAlign: "center",
+    verticalAlign: "middle",
+    marginBottom: "40px",
+    marginLeft: "30vw",
+    backgroundColor: "#c1002c",
+  },
+  
 });
 
 // font-family:'Jost',Arial,Tahoma,sans-serif;font-size:50px;line-height:50px;font-weight:500;letter-spacing:0px;color:#000000;
