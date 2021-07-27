@@ -1,5 +1,6 @@
 import React from "react";
 import { useFonts, Jost_600Regular } from "@expo-google-fonts/jost";
+import Grid from '@material-ui/core/Grid';
 
 import {
   StyleSheet,
@@ -16,6 +17,10 @@ export default function FindAgent() {
     Jost_600Regular,
   });
 
+  let cardData = [
+
+  ]
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Trusted Professionals</Text>
@@ -31,6 +36,23 @@ export default function FindAgent() {
       >
         Find an Agent
       </Pressable>
+      <Grid container>
+          <Grid item container direction='column'>
+              <Grid item spacing={3}>
+                  <img src="https://coloradorealestateus.com/wp-content/uploads/2021/04/communities-and-neighborhoods-in-colorado-springs-1-scaled.jpg" style={{height: 300, width: "100vw"}}/>
+              </Grid>
+          </Grid>
+          <Grid item container direction='column'>
+              <Grid item spacing={3}>
+                  <img src="https://coloradorealestateus.com/wp-content/uploads/2021/04/communities-and-neighborhoods-in-colorado-springs-1-scaled.jpg" style={{height: 300, width: "100vw"}}/>
+              </Grid>
+          </Grid>
+          <Grid item container direction='column'>
+              <Grid item spacing={3}>
+                  <img src="https://coloradorealestateus.com/wp-content/uploads/2021/04/communities-and-neighborhoods-in-colorado-springs-1-scaled.jpg" style={{height: 300, width: "100vw"}}/>
+              </Grid>
+          </Grid>
+      </Grid>
     </View>
   );
 }
