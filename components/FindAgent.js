@@ -33,7 +33,6 @@ const useStyles = makeStyles({
     backgroundColor: "#c1002c",
     color: "rgba(255,255,255,.7)",
     fontFamily: "Jost, Arial, Tahoma, sans-serif",
-
     letterSpacing: "1px",
     textAlign: "center",
   },
