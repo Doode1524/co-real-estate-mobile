@@ -25,7 +25,7 @@ import {
 
 const useStyles = makeStyles({
   container: {
-    height: "114vh",
+    height: 930,
     width: "100vw",
     backgroundColor: "#fbfbd5",
   },
@@ -68,9 +68,6 @@ const useStyles = makeStyles({
     paddingBottom: "20px",
     paddingTop: '10px',
   },
-//   cardMedia: {
-//     height: 250,
-//   },
 });
 
 export default function Loans() {

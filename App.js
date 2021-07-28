@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import FindAgent from "./components/FindAgent";
 import React from "react";
 import Loans from "./components/Loans";
+import Luxury from "./components/Luxury";
 import {
   StyleSheet,
   Text,
@@ -19,6 +20,7 @@ export default function App() {
       <Home />
       <FindAgent />
       <Loans />
+      <Luxury />
       <StatusBar style="auto" />
     </View>
   );
