@@ -1,6 +1,14 @@
 import React from "react";
 import { useFonts, Jost_600Regular } from "@expo-google-fonts/jost";
-import Grid from '@material-ui/core/Grid';
+import Grid from "@material-ui/core/Grid";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import { Button as ButtonMUI } from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 
 import {
   StyleSheet,
@@ -12,14 +20,33 @@ import {
   Pressable,
 } from "react-native";
 
+const useStyles = makeStyles({
+  cardRoot: {
+    maxWidth: 322.44,
+    minWidth: 322.44,
+    paddingBottom: "20px",
+  },
+  cardMedia: {
+    height: 250,
+  },
+  contentBox: {
+    backgroundColor: "#c1002c",
+    color: "rgba(255,255,255,.7)",
+    fontFamily: "Jost, Arial, Tahoma, sans-serif",
+
+    letterSpacing: "1px",
+    textAlign: "center",
+  },
+});
+
 export default function FindAgent() {
+  const classes = useStyles();
+
   let [fontsLoaded] = useFonts({
     Jost_600Regular,
   });
 
-  let cardData = [
-
-  ]
+  let cardData = [];
 
   return (
     <View style={styles.container}>
@@ -36,22 +63,77 @@ export default function FindAgent() {
       >
         Find an Agent
       </Pressable>
-      <Grid container>
-          <Grid item container direction='column'>
-              <Grid item spacing={3}>
-                  <img src="https://coloradorealestateus.com/wp-content/uploads/2021/04/communities-and-neighborhoods-in-colorado-springs-1-scaled.jpg" style={{height: 300, width: "100vw"}}/>
-              </Grid>
-          </Grid>
-          <Grid item container direction='column'>
-              <Grid item spacing={3}>
-                  <img src="https://coloradorealestateus.com/wp-content/uploads/2021/04/communities-and-neighborhoods-in-colorado-springs-1-scaled.jpg" style={{height: 300, width: "100vw"}}/>
-              </Grid>
-          </Grid>
-          <Grid item container direction='column'>
-              <Grid item spacing={3}>
-                  <img src="https://coloradorealestateus.com/wp-content/uploads/2021/04/communities-and-neighborhoods-in-colorado-springs-1-scaled.jpg" style={{height: 300, width: "100vw"}}/>
-              </Grid>
-          </Grid>
+      <Grid container direction="column">
+        <Grid item container direction="column" alignItems="center">
+          <Pressable onPress={() => Alert.alert("Simple Button pressed")}>
+            <Grid item>
+              <Card className={classes.cardRoot}>
+                <CardActionArea>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://coloradorealestateus.com/wp-content/uploads/2021/04/communities-and-neighborhoods-in-colorado-springs-1-scaled.jpg"
+                    title="CO Springs communitites"
+                  />
+                  <CardContent className={classes.contentBox}>
+                    <Typography gutterBottom>
+                      COLORADO SPRINGS COMMUNITIES
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          </Pressable>
+          <Pressable onPress={() => Alert.alert("Simple Button pressed")}>
+            <Grid item spacing={3}>
+              <Card className={classes.cardRoot}>
+                <CardActionArea>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://coloradorealestateus.com/wp-content/uploads/2021/04/painted-mines-peyton-colorado-springs-area.jpg"
+                    title="Things To Do Co springs"
+                  />
+                  <CardContent className={classes.contentBox}>
+                    <Typography gutterBottom>
+                      THINGS TO DO IN COLORADO SPRINGS
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          </Pressable>
+          <Pressable onPress={() => Alert.alert("Simple Button pressed")}>
+            <Grid item spacing={3}>
+              <Card className={classes.cardRoot}>
+                <CardActionArea>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://coloradorealestateus.com/wp-content/uploads/2021/04/denver-colorado-real-estate.jpg"
+                    title="Denver Communities"
+                  />
+                  <CardContent className={classes.contentBox}>
+                    <Typography gutterBottom>DENVER COMMUNITIES</Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          </Pressable>
+          <Pressable onPress={() => Alert.alert("Simple Button pressed")}>
+            <Grid item spacing={3}>
+              <Card className={classes.cardRoot}>
+                <CardActionArea>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://coloradorealestateus.com/wp-content/uploads/2021/06/den-scaled.jpg"
+                    title="Things to do in Denver"
+                  />
+                  <CardContent className={classes.contentBox}>
+                    <Typography gutterBottom>THINGS TO DO IN DENVER</Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Grid>
+          </Pressable>
+        </Grid>
       </Grid>
     </View>
   );
@@ -76,7 +158,7 @@ const styles = StyleSheet.create({
     marginTop: "20px",
     marginLeft: "20px",
     marginBottom: "20px",
-    marginRight: '20px'
+    marginRight: "20px",
   },
   p: {
     fontFamily: "Jost, Arial, Tahoma, sans-serif",
@@ -113,7 +195,6 @@ const styles = StyleSheet.create({
     marginLeft: "30vw",
     backgroundColor: "#c1002c",
   },
-  
 });
 
 // font-family:'Jost',Arial,Tahoma,sans-serif;font-size:50px;line-height:50px;font-weight:500;letter-spacing:0px;color:#000000;
