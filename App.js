@@ -4,6 +4,7 @@ import FindAgent from "./components/FindAgent";
 import React from "react";
 import Loans from "./components/Loans";
 import Luxury from "./components/Luxury";
+import Military from "./components/Military";
 import {
   StyleSheet,
   Text,
@@ -21,6 +22,7 @@ export default function App() {
       <FindAgent />
       <Loans />
       <Luxury />
+      <Military />
       <StatusBar style="auto" />
     </View>
   );
