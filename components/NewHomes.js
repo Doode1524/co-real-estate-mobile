@@ -25,12 +25,12 @@ import {
 
 const useStyles = makeStyles({
   container: {
-    height: "1230px",
+    height: "630px",
     width: "100vw",
-    backgroundColor: "#ffffff",
+    backgroundColor: "#000000",
   },
   title: {
-    color: "#111111",
+    color: "#ffffff",
     fontSize: "17px",
     fontFamily: "Jost, Arial, Tahoma, sans-serif",
     fontWeight: "bold",
@@ -43,7 +43,7 @@ const useStyles = makeStyles({
     textAlign: "left",
     maxWidth: 322.44,
     minWidth: 322.44,
-    color: "#111111",
+    color: "#ffffff",
     fontSize: "13px",
     fontFamily: "Jost, Arial, Tahoma, sans-serif",
     marginTop: "17px",
@@ -75,7 +75,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Military() {
+export default function NewHomes() {
   const classes = useStyles();
 
   let [fontsLoaded] = useFonts({
@@ -88,45 +88,24 @@ export default function Military() {
       <Grid container className={classes.container}>
         <Grid item container direction="column" alignItems="center">
           <Grid item>
-            <img src="https://coloradorealestateus.com/wp-content/uploads/2021/06/ColoradoRealEstate-logos-ALL_military-300x300.png" />
+            <img src="https://coloradorealestateus.com/wp-content/uploads/2021/07/ColoradoRealEstate-logos-ALL_newBuild-300x300.png" />
           </Grid>
           <Grid item>
             <Typography className={classes.title}>
-              Colorado Military Housing
+              Colorado New Builds
             </Typography>
             <Typography className={classes.desc}>
-              Our team specializs in helping military families buy and sell
-              their homes with ease in Colorado Springs near Peterson Air Force
-              Base, Schriever Air Force Base, Fort Carson and the Air Force
-              Academy. If you recently received orders for Moving to Colorado,
-              congratulations. We are PCS Pros at moving Military members.
+              You can hardly drive through the state of Colordo without seeing
+              new construction. You need a realtor even when buying a new build
+              to ensure you get the most bang for your money and they will
+              negotiate on your behalf. Our team has relationships with new and
+              custom builders around the state. Take a look at new construction
+              home here.
             </Typography>
           </Grid>
           <Grid item className={classes.button}>
             <Pressable onPress={() => Alert.alert("Simple Button pressed")}>
-              Search for homes near military bases in Colorado Springs
-            </Pressable>
-          </Grid>
-          <Grid item>
-            <img src="https://coloradorealestateus.com/wp-content/uploads/2021/07/ColoradoRealEstate-logos-ALL_foreclosure-300x300.png" />
-          </Grid>
-          <Grid item>
-            <Typography className={classes.title}>
-              Colorado Foreclosure Market
-            </Typography>
-            <Typography className={classes.desc}>
-              Facing foreclosure? Get a cash offer on your home in 48 hours. Our
-              team at Colorado Real Estate are experts at helping you handle
-              foreclosures. We also have the latest list of foreclosed
-              properties at our disposal.
-            </Typography>
-            <Typography className={classes.desc}>
-             Connect with our team today.
-            </Typography>
-          </Grid>
-          <Grid item className={classes.button}>
-            <Pressable onPress={() => Alert.alert("Simple Button pressed")}>
-              Get a cash offer or search foreclosed homes!
+              Search New Build Homes in Colorado
             </Pressable>
           </Grid>
         </Grid>

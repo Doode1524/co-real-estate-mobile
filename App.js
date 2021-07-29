@@ -5,6 +5,7 @@ import React from "react";
 import Loans from "./components/Loans";
 import Luxury from "./components/Luxury";
 import Military from "./components/Military";
+import NewHomes from "./components/NewHomes";
 import {
   StyleSheet,
   Text,
@@ -23,6 +24,7 @@ export default function App() {
       <Loans />
       <Luxury />
       <Military />
+      <NewHomes />
       <StatusBar style="auto" />
     </View>
   );
