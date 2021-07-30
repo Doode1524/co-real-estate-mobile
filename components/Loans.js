@@ -56,9 +56,9 @@ const useStyles = makeStyles({
     borderRadius: "35px",
     borderStyle: "solid",
     width: "65vw",
-    display: 'inline-block',
-    position: 'relative',
-    textAlign: 'center',
+    display: "inline-block",
+    position: "relative",
+    textAlign: "center",
     verticalAlign: "middle",
     marginBottom: "15px",
   },
@@ -66,7 +66,7 @@ const useStyles = makeStyles({
     maxWidth: 322.44,
     minWidth: 322.44,
     paddingBottom: "20px",
-    paddingTop: '10px',
+    paddingTop: "10px",
   },
 });
 
@@ -101,13 +101,21 @@ export default function Loans() {
                 Get Pre-Approved
               </Pressable>
             </Grid>
-            <Grid item >
-                <img className={classes.loanImg} src="https://coloradorealestateus.com/wp-content/uploads/2021/05/colorado-mortgage-home-loans-and-real-estate-help.jpeg" />
+            <Grid item>
+              <img
+                className={classes.loanImg}
+                src="https://coloradorealestateus.com/wp-content/uploads/2021/05/colorado-mortgage-home-loans-and-real-estate-help.jpeg"
+              />
             </Grid>
             <Grid item>
-            <Typography paragraph className={classes.info} style={{color: 'black', fontWeight: 'bold'}}>
-              "Work with our team to ensure success in your next real estate venture."
-            </Typography>
+              <Typography
+                paragraph
+                className={classes.info}
+                style={{ color: "black", fontWeight: "bold" }}
+              >
+                "Work with our team to ensure success in your next real estate
+                venture."
+              </Typography>
             </Grid>
           </Grid>
         </Grid>

@@ -121,7 +121,7 @@ export default function Military() {
               properties at our disposal.
             </Typography>
             <Typography className={classes.desc}>
-             Connect with our team today.
+              Connect with our team today.
             </Typography>
           </Grid>
           <Grid item className={classes.button}>
