@@ -1,4 +1,6 @@
 import { StatusBar } from "expo-status-bar";
+import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import { useFonts, Jost_400Regular } from "@expo-google-fonts/jost";
 import {
@@ -16,7 +18,15 @@ import Loans from "../landingPage/Loans";
 import Military from "../landingPage/Military";
 import NewHomes from "../landingPage/NewHomes";
 
+const useStyles = makeStyles(() => ({
+  container: {
+    position: 'absolute',
+    top: "50vh",
+  },
+}));
+
 export default function Worth({ navigation }) {
+  const classes = useStyles({});
   let [fontsLoaded] = useFonts({
     Jost_400Regular,
   });
@@ -30,6 +40,11 @@ export default function Worth({ navigation }) {
           uri: "https://coloradorealestateus.com/wp-content/uploads/2021/06/colorado-real-estate-main-background-colorado-springs-denver-realtor-find-a-home-11.jpg",
         }}
       >
+        <Grid container className={classes.container}>
+          <Grid item container>
+            <Grid item>Hiiiiiiiii</Grid>
+          </Grid>
+        </Grid>
       </ImageBackground>
 
       <StatusBar style="auto" />
@@ -49,4 +64,3 @@ const styles = StyleSheet.create({
     height: "100vh",
   },
 });
-
