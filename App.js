@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import Home from "./components/Home";
-import FindAgent from "./components/FindAgent";
+import Home from "./landingPage/Home";
+import FindAgent from "./landingPage/FindAgent";
 import React from "react";
-import Loans from "./components/Loans";
-import Luxury from "./components/Luxury";
-import Military from "./components/Military";
-import NewHomes from "./components/NewHomes";
+import Loans from "./landingPage/Loans";
+import Luxury from "./landingPage/Luxury";
+import Military from "./landingPage/Military";
+import NewHomes from "./landingPage/NewHomes";
 import {
   StyleSheet,
   Text,
