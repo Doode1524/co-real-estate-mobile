@@ -11,7 +11,7 @@ import {
   Pressable,
 } from "react-native";
 
-export default function Home() {
+export default function Home(props) {
   let [fontsLoaded] = useFonts({
     Jost_400Regular,
   });
