@@ -27,7 +27,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Worth" component={Worth} />
+        <Stack.Screen name="What's Your Home Worth?" component={Worth} />
       </Stack.Navigator>
       {/* <FindAgent />
         <Loans />

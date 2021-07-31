@@ -40,7 +40,7 @@ export default function Home({ navigation }) {
           </Pressable>
           <Pressable
             style={[styles.homeBtn, styles.homeBtn2]}
-            onPress={() => navigation.navigate("Worth")}
+            onPress={() => navigation.navigate("What's Your Home Worth?")}
           >
             What's Your Property Worth?
           </Pressable>
