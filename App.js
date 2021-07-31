@@ -6,6 +6,7 @@ import Loans from "./landingPage/Loans";
 import Luxury from "./landingPage/Luxury";
 import Military from "./landingPage/Military";
 import NewHomes from "./landingPage/NewHomes";
+import Worth from "./components/Worth";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -23,16 +24,17 @@ const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View>
-      <NavigationContainer>
-        <Home Stack={Stack} />
-        <FindAgent />
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Worth" component={Worth} />
+      </Stack.Navigator>
+      {/* <FindAgent />
         <Loans />
         <Luxury />
         <Military />
         <NewHomes />
-        <StatusBar style="auto" />
-      </NavigationContainer>
-    </View>
+        <StatusBar style="auto" /> */}
+    </NavigationContainer>
   );
 }

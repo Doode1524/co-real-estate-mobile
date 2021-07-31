@@ -10,8 +10,14 @@ import {
   ImageBackground,
   Pressable,
 } from "react-native";
+import Luxury from "./Luxury";
+import FindAgent from "./FindAgent";
+import Loans from "./Loans";
+import Military from "./Military";
+import NewHomes from "./NewHomes";
+import Worth from "../components/Worth";
 
-export default function Home(props) {
+export default function Home({ navigation }) {
   let [fontsLoaded] = useFonts({
     Jost_400Regular,
   });
@@ -34,7 +40,7 @@ export default function Home(props) {
           </Pressable>
           <Pressable
             style={[styles.homeBtn, styles.homeBtn2]}
-            onPress={() => Alert.alert("Simple Button pressed")}
+            onPress={() => navigation.navigate("Worth")}
           >
             What's Your Property Worth?
           </Pressable>
@@ -46,7 +52,12 @@ export default function Home(props) {
           </Pressable>
         </View>
       </ImageBackground>
-
+      {/* // rest of Landing page components */}
+      <FindAgent />
+      <Loans />
+      <Luxury />
+      <Military />
+      <NewHomes />
       <StatusBar style="auto" />
     </View>
   );
