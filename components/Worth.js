@@ -20,8 +20,9 @@ import NewHomes from "../landingPage/NewHomes";
 
 const useStyles = makeStyles(() => ({
   container: {
-    position: 'absolute',
-    top: "50vh",
+    position: "absolute",
+    top: "45vh",
+    width: "100vw",
   },
 }));
 
@@ -41,8 +42,8 @@ export default function Worth({ navigation }) {
         }}
       >
         <Grid container className={classes.container}>
-          <Grid item container>
-            <Grid item>Hiiiiiiiii</Grid>
+          <Grid item container direction="column" alignItems="center">
+            <Grid item>FORM GOES HERE</Grid>
           </Grid>
         </Grid>
       </ImageBackground>
