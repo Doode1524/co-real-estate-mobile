@@ -34,7 +34,7 @@ export default function Home({ navigation }) {
         <View style={styles.btnColumn}>
           <Pressable
             style={styles.homeBtn}
-            onPress={() => Alert.alert("Simple Button pressed")}
+            onPress={() => navigation.navigate("Search Colorado")}
           >
             SEARCH COLORADO
           </Pressable>
