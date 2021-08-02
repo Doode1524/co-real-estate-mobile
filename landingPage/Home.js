@@ -46,7 +46,7 @@ export default function Home({ navigation }) {
           </Pressable>
           <Pressable
             style={[styles.homeBtn, styles.homeBtn3]}
-            onPress={() => Alert.alert("Simple Button pressed")}
+            onPress={() => navigation.navigate("Schedule a Consultation")}
           >
             Schedule a Consultation
           </Pressable>

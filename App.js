@@ -8,6 +8,7 @@ import Military from "./landingPage/Military";
 import NewHomes from "./landingPage/NewHomes";
 import Worth from "./components/Worth";
 import Search from "./components/Search";
+import Consultation from "./components/Consultation";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
@@ -30,6 +31,7 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="What's Your Home Worth?" component={Worth} />
         <Stack.Screen name="Search Colorado" component={Search} />
+        <Stack.Screen name="Schedule a Consultation" component={Consultation} />
       </Stack.Navigator>
       {/* <FindAgent />
         <Loans />
