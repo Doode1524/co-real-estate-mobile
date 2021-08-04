@@ -1,8 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import React from "react";
+import React, {useState} from "react";
 import { useFonts, Jost_400Regular } from "@expo-google-fonts/jost";
+import TextField from "@material-ui/core/TextField";
 import {
   StyleSheet,
   Text,
@@ -24,13 +25,19 @@ const useStyles = makeStyles(() => ({
     top: "45vh",
     width: "100vw",
   },
+  
 }));
 
 export default function Worth({ navigation }) {
+  const [address, setAddress] = useState("")
   const classes = useStyles({});
   let [fontsLoaded] = useFonts({
     Jost_400Regular,
   });
+
+  const handleChange = (e) => {
+    setAddress(e.target.value)
+  };
 
   return (
     <View style={styles.container}>
@@ -43,7 +50,20 @@ export default function Worth({ navigation }) {
       >
         <Grid container className={classes.container}>
           <Grid item container direction="column" alignItems="center">
-            <Grid item>FORM GOES HERE</Grid>
+            <Grid item>
+              <TextField
+                id="outlined-margin-none"
+                placeholder="Enter an address"
+                variant="outlined"
+                onChange={(e) => handleChange(e)}
+              />
+              <Pressable
+                onPress={() => console.log(address)}
+                style={styles.worthBtn}
+              >
+                Check
+              </Pressable>
+            </Grid>
           </Grid>
         </Grid>
       </ImageBackground>
@@ -63,5 +83,29 @@ const styles = StyleSheet.create({
   homeImg: {
     width: "100vw",
     height: "100vh",
+  },
+  worthBtn: {
+    backgroundColor: "#133362",
+    color: "#ffffff",
+    borderColor: "transparent",
+    fontFamily: "Jost_400Regular",
+    fontSize: "20px",
+    lineHeight: "20px",
+    fontWeight: 400,
+    letterSpacing: "0px",
+    paddingTop: "15px",
+    paddingRight: "35px",
+    paddingBottom: "15px",
+    paddingLeft: "35px",
+    borderWidth: 0,
+    borderRadius: "35px",
+    borderStyle: "solid",
+    width: "54vw",
+    textAlign: "center",
+    display: "flex",
+    verticalAlign: "middle",
+    marginBottom: "40px",
+    marginLeft: "10px",
+    marginTop: '10px',
   },
 });
