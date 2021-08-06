@@ -38,7 +38,8 @@ export default function App() {
         <Luxury />
         <Military />
         <NewHomes />
-        <StatusBar style="auto" /> */}
+        <StatusBar style="auto" /> 
+        //test*/}
     </NavigationContainer>
   );
 }
