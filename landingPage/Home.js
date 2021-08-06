@@ -53,7 +53,7 @@ export default function Home({ navigation }) {
         </View>
       </ImageBackground>
       {/* // rest of Landing page components */}
-      <FindAgent />
+      <FindAgent navigation={navigation}/>
       <Loans />
       <Luxury />
       <Military />

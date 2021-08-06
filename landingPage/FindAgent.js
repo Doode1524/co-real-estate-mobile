@@ -38,7 +38,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function FindAgent() {
+export default function FindAgent({navigation}) {
   const classes = useStyles();
 
   let [fontsLoaded] = useFonts({
@@ -58,7 +58,7 @@ export default function FindAgent() {
       </Text>
       <Pressable
         style={styles.agentBtn}
-        onPress={() => Alert.alert("Simple Button pressed")}
+        onPress={() => navigation.navigate("Find an Agent")}
       >
         Find an Agent
       </Pressable>
